@@ -1,8 +1,7 @@
 # Sistema Integral de Gestión - Software FJ
 Desarrollo de un sistema en Python para gestionar clientes, servicios y reservas de la empresa Software FJ.
 
-#Funcionalidades
-
+# Funcionalidades
 1. Registro y validación de clientes.
 2. Gestión de reservas de salas.
 3. Alquiler de equipos.
@@ -12,5 +11,5 @@ Desarrollo de un sistema en Python para gestionar clientes, servicios y reservas
 7. Registro de eventos y errores mediante logging.
 8. Diez simulaciones de operaciones válidas e inválidas.
 
-#Integrantes
+# Integrantes
 Sofia del Pilar Reyes Bernal
