@@ -1,0 +1,54 @@
+20/11/2026 19:39:13 - INFO - Inicio del sistema Software FJ.
+20/11/2026 19:39:13 - INFO - Cliente 1001 registrado.
+20/11/2026 19:39:13 - INFO - Simulación 1 terminada correctamente.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 1.
+20/11/2026 19:39:13 - ERROR - Simulación 2: La identificación está vacía o contiene caracteres no válidos.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 2.
+20/11/2026 19:39:13 - ERROR - Simulación 3: Ya existe un cliente con esa identificación.
+20/11/2026 19:39:13 - INFO - Inicio del sistema Software FJ.
+20/11/2026 19:39:13 - INFO - Cliente 1001 registrado.
+20/11/2026 19:39:13 - INFO - Simulación 1 terminada correctamente.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 1.
+20/11/2026 19:39:13 - ERROR - Simulación 2: La identificación está vacía o contiene caracteres no válidos.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 2.
+20/11/2026 19:39:13 - ERROR - Simulación 3: Ya existe un cliente con esa identificación.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 3.
+20/11/2026 19:39:13 - INFO - Servicio S001 registrado.
+20/11/2026 19:39:13 - INFO - Simulación 4 terminada correctamente.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 4.
+20/11/2026 19:39:13 - INFO - Servicio E001 registrado.
+20/11/2026 19:39:13 - INFO - Simulación 5 terminada correctamente.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 5.
+20/11/2026 19:39:13 - INFO - Servicio A001 registrado.
+20/11/2026 19:39:13 - INFO - Simulación 6 terminada correctamente.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 6.
+20/11/2026 19:39:13 - INFO - Reserva R001 creada.
+20/11/2026 19:39:13 - INFO - Reserva R001 confirmada.
+20/11/2026 19:39:13 - INFO - Simulación 7 terminada correctamente.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 7.
+20/11/2026 19:39:13 - INFO - Reserva R002 creada.
+20/11/2026 19:39:13 - ERROR - Simulación 8: No hay disponibilidad para el servicio solicitado.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 8.
+20/11/2026 19:39:13 - ERROR - Simulación 9: La reserva de sala debe ser mayor que cero y máximo 12 horas.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 9.
+20/11/2026 19:39:13 - INFO - Reserva R001 cancelada.
+20/11/2026 19:39:13 - INFO - Simulación 10 terminada correctamente.
+20/11/2026 19:39:13 - INFO - Finalización de simulación 10.
+20/11/2026 19:39:13 - ERROR - Se presentó un error de conversión de identificación.
+Traceback (most recent call last):
+  File "/mnt/data/software_fj.py", line 1225, in convertir_identificacion
+    identificacion = int(valor)
+ValueError: invalid literal for int() with base 10: 'texto incorrecto'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/data/software_fj.py", line 1739, in iniciar_sistema
+    convertir_identificacion("texto incorrecto")
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/software_fj.py", line 1233, in convertir_identificacion
+    raise DatosInvalidosError(
+    ...<3 lines>...
+    ) from error
+DatosInvalidosError: No fue posible convertir la identificación a número.
+20/11/2026 19:39:13 - INFO - Finalización del sistema Software FJ.
